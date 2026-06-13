@@ -1,4 +1,5 @@
 import 'package:assignment/Register_Screen_UI.dart';
+import 'package:assignment/simple_Flutter_Counter_Navigation_App.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: RegisterScreenUi(),
+      home: SimpleflutterCounterNavigationApp(),
     );
   }
 }
