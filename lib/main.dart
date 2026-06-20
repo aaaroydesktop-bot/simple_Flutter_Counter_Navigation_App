@@ -1,9 +1,9 @@
-import 'package:assignment/Register_Screen_UI.dart';
-import 'package:assignment/simple_Flutter_Counter_Navigation_App.dart';
+import 'package:assignment/Student_Profile_Card_App.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -11,9 +11,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: SimpleflutterCounterNavigationApp(),
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      builder: (context, child) {
+        return const MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: StudentProfileCardApp(),
+        );
+      },
     );
   }
 }
